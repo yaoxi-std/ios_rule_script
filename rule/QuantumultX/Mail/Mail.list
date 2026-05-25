@@ -1,10 +1,10 @@
 # NAME: Mail
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-05-25 11:22:36
-# HOST: 36
+# UPDATED: 2026-05-25 11:35:46
+# HOST: 27
 # HOST-SUFFIX: 3
-# TOTAL: 39
+# TOTAL: 30
 HOST,apple.imap.mail.yahoo.com,Mail
 HOST,apple.smtp.mail.yahoo.com,Mail
 HOST,imap-mail.outlook.com,Mail
@@ -32,15 +32,6 @@ HOST,smtp.mail.com,Mail
 HOST,imap.zoho.com,Mail
 HOST,pop.zoho.com,Mail
 HOST,smtp.zoho.com,Mail
-HOST,imap.qq.com,Mail
-HOST,pop.qq.com,Mail
-HOST,smtp.qq.com,Mail
-HOST,imap.163.com,Mail
-HOST,pop.163.com,Mail
-HOST,smtp.163.com,Mail
-HOST,imap.126.com,Mail
-HOST,pop.126.com,Mail
-HOST,smtp.126.com,Mail
 HOST-SUFFIX,imap.yandex.com,Mail
 HOST-SUFFIX,m.hotmail.com,Mail
 HOST-SUFFIX,smtp.yandex.com,Mail
