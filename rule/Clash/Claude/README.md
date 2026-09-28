@@ -4,7 +4,7 @@
 
 ![](https://shields.io/badge/-移除重复规则-ff69b4) ![](https://shields.io/badge/-DOMAIN与DOMAIN--SUFFIX合并-green) ![](https://shields.io/badge/-DOMAIN--SUFFIX间合并-critical) ![](https://shields.io/badge/-DOMAIN与DOMAIN--KEYWORD合并-9cf) ![](https://shields.io/badge/-DOMAIN--SUFFIX与DOMAIN--KEYWORD合并-blue) ![](https://shields.io/badge/-IP--CIDR(6)合并-blueviolet) 
 
-Claude规则由《RULE GENERATOR 规则生成器》自动生成。
+本 fork 的 Clash Claude 规则集保留上游规则，并补充 `claude.com` 与 `claudeusercontent.com`。维护时同步更新 `Claude.list`、`Claude.yaml` 和 `Claude_No_Resolve.yaml`；运行配置直接引用规则集，不再单独维护这两个域名。
 
 分流规则是互联网公共服务的域名和IP地址汇总，所有数据均收集自互联网公开信息，不代表我们支持或使用这些服务。
 
@@ -12,14 +12,14 @@ Claude规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2025-06-06 09:20:01
+最后更新时间：2026-09-29 00:00:00
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
 | DOMAIN | 1  | 
-| DOMAIN-SUFFIX | 2  | 
-| TOTAL | 3  | 
+| DOMAIN-SUFFIX | 4  |
+| TOTAL | 5  |
 
 
 ## Clash 
@@ -35,15 +35,15 @@ Claude规则由《RULE GENERATOR 规则生成器》自动生成。
 #### 规则链接
 **MASTER分支 (每日更新)**
 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+https://raw.githubusercontent.com/yaoxi-std/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
 
 **MASTER分支 CDN (每日更新)**
 
-https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
+https://cdn.jsdelivr.net/gh/yaoxi-std/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
 
 **MASTER分支 GHProxy (每日更新)**
 
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+https://ghproxy.com/https://raw.githubusercontent.com/yaoxi-std/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
 
 **RELEASE分支 (不定时更新)**
 
