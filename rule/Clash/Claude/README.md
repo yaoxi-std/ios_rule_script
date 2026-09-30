@@ -4,7 +4,7 @@
 
 ![](https://shields.io/badge/-移除重复规则-ff69b4) ![](https://shields.io/badge/-DOMAIN与DOMAIN--SUFFIX合并-green) ![](https://shields.io/badge/-DOMAIN--SUFFIX间合并-critical) ![](https://shields.io/badge/-DOMAIN与DOMAIN--KEYWORD合并-9cf) ![](https://shields.io/badge/-DOMAIN--SUFFIX与DOMAIN--KEYWORD合并-blue) ![](https://shields.io/badge/-IP--CIDR(6)合并-blueviolet) 
 
-本 fork 的 Clash Claude 规则集保留上游规则，并补充 `claude.com` 与 `claudeusercontent.com`。维护时同步更新 `Claude.list`、`Claude.yaml` 和 `Claude_No_Resolve.yaml`；运行配置直接引用规则集，不再单独维护这两个域名。
+本 fork 的 Clash Claude 规则集补充 Claude 核心域名、MCP、认证、CDN、遥测、客服及 Anthropic IP/ASN。维护时同步更新 `Claude.list`、`Claude.yaml` 和 `Claude_No_Resolve.yaml`。规则参考 [Net.Coffee 域名清单](https://ip.net.coffee/claude/site.html)；采用清单不代表认可其风控结论。共享第三方域名和 `datadog`、`sentry`、`sift` 关键词也会匹配其他应用使用的同类服务。NTP 不提供时区，因此不纳入 Claude 分类。
 
 分流规则是互联网公共服务的域名和IP地址汇总，所有数据均收集自互联网公开信息，不代表我们支持或使用这些服务。
 
@@ -12,25 +12,29 @@
 
 ## 规则统计
 
-最后更新时间：2026-09-29 00:00:00
+最后更新时间：2026-09-30 00:00:00
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 1  | 
-| DOMAIN-SUFFIX | 4  |
-| TOTAL | 5  |
+| DOMAIN | 6 |
+| DOMAIN-SUFFIX | 11 |
+| DOMAIN-KEYWORD | 3 |
+| IP-CIDR | 1 |
+| IP-CIDR6 | 1 |
+| IP-ASN | 1 |
+| TOTAL | 23 |
 
 
 ## Clash 
 
 #### 使用说明
 - Claude.yaml，请使用 behavior: "classical"。
-- Claude_Resolve.yaml，请使用 behavior: "classical"。
+- Claude_No_Resolve.yaml，请使用 behavior: "classical"。
 
 #### 配置建议
 - Claude.yaml 单独使用。
-- Claude_Resolve.yaml 单独使用。
+- Claude_No_Resolve.yaml 单独使用。
 
 #### 规则链接
 **MASTER分支 (每日更新)**
