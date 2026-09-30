@@ -2,15 +2,16 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/yaoxi-std/ios_rule_script
 # UPDATED: 2026-09-30 00:00:00
-# DOMAIN: 7
+# DOMAIN: 8
 # DOMAIN-SUFFIX: 11
 # DOMAIN-KEYWORD: 3
 # IP-CIDR: 1
 # IP-CIDR6: 1
 # IP-ASN: 1
-# TOTAL: 24
+# TOTAL: 25
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.auth0.com
+DOMAIN,api.statsig.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.usefathom.com

@@ -4,7 +4,7 @@
 
 ![](https://shields.io/badge/-移除重复规则-ff69b4) ![](https://shields.io/badge/-DOMAIN与DOMAIN--SUFFIX合并-green) ![](https://shields.io/badge/-DOMAIN--SUFFIX间合并-critical) ![](https://shields.io/badge/-DOMAIN与DOMAIN--KEYWORD合并-9cf) ![](https://shields.io/badge/-DOMAIN--SUFFIX与DOMAIN--KEYWORD合并-blue) ![](https://shields.io/badge/-IP--CIDR(6)合并-blueviolet) 
 
-本 fork 的 Clash Claude 规则集补充 Claude 核心域名、MCP、认证、CDN、遥测、客服及 Anthropic IP/ASN。维护时同步更新 `Claude.list`、`Claude.yaml` 和 `Claude_No_Resolve.yaml`。规则参考 [Net.Coffee 域名清单](https://ip.net.coffee/claude/site.html)；采用清单不代表认可其风控结论。共享第三方域名和 `datadog`、`sentry`、`sift` 关键词也会匹配其他应用使用的同类服务。`fathom-cdn.b-cdn.net` 覆盖本机 redir-host 实测识别到的 Fathom CDN 别名，避免原域名改写后落入通用代理。NTP 不提供时区，因此不纳入 Claude 分类。
+本 fork 的 Clash Claude 规则集补充 Claude 核心域名、MCP、认证、CDN、遥测、客服及 Anthropic IP/ASN。维护时同步更新 `Claude.list`、`Claude.yaml` 和 `Claude_No_Resolve.yaml`。规则参考 [Net.Coffee 域名清单](https://ip.net.coffee/claude/site.html)；采用清单不代表认可其风控结论。共享第三方域名和 `datadog`、`sentry`、`sift` 关键词也会匹配其他应用使用的同类服务。`fathom-cdn.b-cdn.net` 覆盖本机 redir-host 实测识别到的 Fathom CDN 别名，避免原域名改写后落入通用代理。`api.statsig.com` 与其他 AI 共用，固定到 Claude 策略以覆盖共享 Statsig 遥测。NTP 不提供时区，因此不纳入 Claude 分类。
 
 分流规则是互联网公共服务的域名和IP地址汇总，所有数据均收集自互联网公开信息，不代表我们支持或使用这些服务。
 
@@ -17,13 +17,13 @@
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 7 |
+| DOMAIN | 8 |
 | DOMAIN-SUFFIX | 11 |
 | DOMAIN-KEYWORD | 3 |
 | IP-CIDR | 1 |
 | IP-CIDR6 | 1 |
 | IP-ASN | 1 |
-| TOTAL | 24 |
+| TOTAL | 25 |
 
 
 ## Clash 
