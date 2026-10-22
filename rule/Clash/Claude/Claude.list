@@ -1,14 +1,14 @@
 # NAME: Claude
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/yaoxi-std/ios_rule_script
-# UPDATED: 2026-10-02 00:00:00
+# UPDATED: 2026-10-22 00:00:00
 # DOMAIN: 8
-# DOMAIN-SUFFIX: 11
+# DOMAIN-SUFFIX: 12
 # DOMAIN-KEYWORD: 5
 # IP-CIDR: 1
 # IP-CIDR6: 1
 # IP-ASN: 1
-# TOTAL: 27
+# TOTAL: 28
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.auth0.com
 DOMAIN,api.statsig.com
@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,withpersona.com
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,datadog
